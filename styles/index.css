@@ -42,7 +42,7 @@ canvas.particles-js-canvas-el {
 }
 
 
-/* Navbar */
+/* NAV */
 
 .nav_section .navbar-brand {
     font-size: 22ppx;
@@ -79,6 +79,28 @@ canvas.particles-js-canvas-el {
     position: absolute;
     bottom: 7px;
 }
+
+@media(max-width: 990px) and (min-width: 350px) {
+    .nav_section .navbar-nav {
+        height: 150%;
+        width: 100px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        text-align: center;
+    }
+    .nav_section .navbar-nav li a {
+        display: block;
+        background-color: #1b1b1b;
+        padding: 3px;
+        margin: 2px;
+    }
+}
+
+
+/* HERO SECTION */
 
 .hero_section .row {
     display: flex;
@@ -554,6 +576,13 @@ p {
 .footer-area .list-group .list-group-item {
     margin: -3px 0px;
     color: #fff;
+    transition: 0.5s !important;
+}
+
+.footer-area .list-group .list-group-item h5 a {
+    margin: -3px 0px;
+    color: #fff;
+    font-size: 17px;
     transition: 0.5s !important;
 }
 
