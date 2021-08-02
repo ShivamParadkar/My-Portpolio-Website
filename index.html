@@ -24,11 +24,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-
-    <!-- Nav -->
 
     <div class="container">
         <div class="nav_section">
@@ -36,8 +35,11 @@
                 <a class="navbar-brand text-white" href="#">
                     MY INFO <span>.</span>
                 </a>
+                <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="text-white fa fa-bars"></i>
+                </button>
 
-                <div class="navbar fixed-top">
+                <div class="navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" style="color:#f87652 !important" href="#">Home</a>
@@ -46,7 +48,7 @@
                             <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
+                            <a class="nav-link" href="#skill">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#project">Projects</a>
@@ -57,6 +59,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
                     </ul>
                 </div>
             </nav>
@@ -106,7 +109,7 @@
                 <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12 about_me_right_section">
                     <h2 id="heading">About Me</h2>
                     <hr>
-                    <p id="txt"> Hello , My Name is Shivam Paradkar and I am a Software Developer. I can Create Beautiful Websites using latest Technologies according to customers need. </p>
+                    <p id="txt"> Hellow , My Name is Shivam Paradkar and I am a Software Developer. I can Create Beautiful Websites using latest Technologies according to customers need. </p>
                     <table class="table">
                         <tr>
                             <td>Name</td>
@@ -131,7 +134,7 @@
     </div>
 
     <!--SKILLS SECTION -->
-    <div class="skills_section" id="skills">
+    <div class="skills_section" id="skill">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12 skills_section_left_section">
@@ -327,7 +330,6 @@
                                 <a href="https://fmovies2.org"></a><br>
                                 <style>
                                     .mapouter {
-                                        overflow: hidden;
                                         position: relative;
                                         text-align: right;
                                         height: 327px;
@@ -360,11 +362,10 @@
                     </a>
                     <p>This is a Portfolio website . I am a B.Tech Computer Science Student . This sites shows my skills , projects & experinces. </p>
                     <div class="links">
-                        <h3><a href="https://www.facebook.com/shivam.paradkar.33"><i class="fa fa-facebook-square animate_animated"></i></a>
+                        <h5><a href="https://www.facebook.com/shivam.paradkar.33"><i class="fa fa-facebook-square animate_animated"></i></a>
                             <a href="https://www.instagram.com/shivamparadkar316/"><i class="fa fa-instagram px1 animate_animated"></i></a>
                             <a href="https://twitter.com/shivam_paradkar"><i class="fa fa-twitter-square animate_animated"></i></a>
-                            <a href="https://www.youtube.com/channel/UC7p8h4XfKMXFUUbCdprTlxQ"><i class="fa fa-youtube-square animate_animated"></i></a>
-                        </h3>
+                            <a href="https://www.youtube.com/channel/UC7p8h4XfKMXFUUbCdprTlxQ"><i class="fa fa-youtube-square animate_animated"></i></a></h5>
                     </div>
                 </div>
                 <div class=" col-lg-4 col-md-4 col-sm-12 col-12 column">
@@ -382,7 +383,7 @@
                     </ul>
                 </div>
                 <div class=" col-lg-4 col-md-4 col-sm-12 col-12 column">
-                    <h4 class="heading text-white">My profile links <span style="color: #f87652;">:</span></h4>
+                    <h4 class="heading">My profile links <span style="color: #f87652;">:</span></h4>
                     <ul class="list-group">
                         <li class="list-group-item border-0 bg-transparent">
                             <h5><a href="https://www.codechef.com/users/shivam88394"><i class=" fa fa-chevron-right"></i><span>CodeChief</span></a></h5>
@@ -401,44 +402,6 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript">
-        function element() {
-            var h = window.innerHeight;
-            document.getElementById('content').style.height = h + "px";
-            document.getElementById('content1').style.height = h + "px";
-            document.getElementById('content2').style.height = h + "px";
-            document.getElementById('content3').style.height = h + "px";
-
-        }
-
-        function slideAnimate() {
-            var i = document.getElementById('span');
-            var h = window.innerHeight;
-            var x = 2 * h;
-            var y = 3 * h;
-            var Yoffset = window.pageYOffset;
-            if (Yoffset < h) {
-                i.style.left = "0px";
-
-            } else if (Yoffset < (2 * h)) {
-                i.style.left = "100px";
-
-            } else if (Yoffset < (3 * h)) {
-                i.style.left = "200px";
-
-            } else if (Yoffset === (3 * h)) {
-                i.style.left = "300px";
-
-            }
-
-
-
-        }
-        window.addEventListener('scroll', slideAnimate);
-        window.addEventListener('load', element);
-        window.addEventListener('resize', element);
-    </script>
 
     <div id="particles-js"></div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
