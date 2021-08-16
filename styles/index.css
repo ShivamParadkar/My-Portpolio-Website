@@ -42,50 +42,54 @@
  }
  /* Navbar */
  
- .nav_section .navbar-brand {
-     font-size: 22ppx;
+ .nav_section .nav_item {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     position: relative;
  }
  
- .nav_section .navbar-brand span {
-     color: var(--pink-color);
- }
- 
- .nav_section .navbar-nav li {
-     margin: 0px 8px;
- }
- 
- .nav_section .navbar-nav li a {
-     color: white !important;
-     font-size: 15px;
- }
- 
- .nav_section .navbar-nav .nav-link::before {
-     content: '';
-     width: 0px;
-     height: 0px;
-     background-color: white;
+ .nav_section .heading {
      position: absolute;
-     bottom: 7px;
-     transition: 0.5s;
+     left: 0;
  }
  
- .nav_section .navbar-nav .nav-link:hover::before {
-     content: '';
-     height: 2px;
-     width: 17px;
+ .nav_section a {
+     color: white;
+     margin: 10px;
+     padding: 5px;
+     border-radius: 5px;
+ }
+ 
+ .nav_section a:hover {
+     color: black;
      background-color: white;
-     position: absolute;
-     bottom: 7px;
+     text-decoration: none;
  }
  
- @media (min-width: 993px) {
-     .nav_section {
-         position: fixed;
-         z-index: 9999;
-         background: black;
+ @media screen and (max-width:700px) {
+     .nav_section .nav_item {
+         display: flex;
+         flex-direction: column;
+     }
+     .nav_section .nav_item a {
+         margin-top: 10px;
+     }
+     .nav_section .nav_item .home {
+         margin-top: 35px;
+     }
+     .nav_section .heading {
+         position: absolute;
+         top: 0;
+         padding-bottom: 15px;
+         margin-bottom: 15px;
      }
  }
  /* Hero Section */
+ 
+ .hero_section {
+     margin-top: 15px;
+ }
  
  .hero_section .row {
      display: flex;
@@ -500,6 +504,12 @@
  @media (max-width: 991px) and (min-width: 768px) {
      .contact_section .heading {
          font-size: 42px;
+     }
+ }
+ 
+ @media screen and (max-width: 500px) {
+     .contact_section {
+         padding-top: 70px;
      }
  }
  /* FOOTER AREA */

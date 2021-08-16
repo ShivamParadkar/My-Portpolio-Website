@@ -29,41 +29,23 @@
 
 <body>
 
-    <div class="container">
-        <div class="nav_section">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand text-white" href="#">
-                    MY INFO <span>.</span>
-                </a>
-                <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="text-white fa fa-bars"></i>
-                </button>
-
-                <div class="navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" style="color:#f87652 !important" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skill">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#project">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-                    </ul>
-                </div>
-            </nav>
+    <div class="nav_section fixed-top">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="nav_item bg-dark p-4">
+                <h1 class="heading text-primary">My Info<span class="text-white">.</span></h1>
+                <a class="home active" href="#">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skill">Skills</a>
+                <a href="#project">Projects</a>
+                <!--<a href="#blog">Blogs</a>-->
+                <a href="#contact">Contact</a>
+            </div>
         </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
     </div>
 
     <!-- HERO SECTION -->
@@ -77,7 +59,7 @@
                     <p>Detailed Oriented Computer Science engineer working on web development Projects. Learning Data Structure & Algorithms and improving my Skills. Seeking for job opportunity as Software Development Engineer.
                     </p>
                     <div class="btn_container">
-                        <button class="btn btn-light animate_animated">Hire Me</button>
+                        <!--<button class="btn btn-light animate_animated">Hire Me</button>-->
                     </div>
                 </div>
                 <div class="col-lg-6  col-md-6 col-ms-12 col-xs-12">
@@ -101,9 +83,9 @@
                     <h4 id="info_gmail">Shivam83paradkar@gmail.com</h4>
                     <div class="contact_info">
                         <h5><a href="https://www.linkedin.com/in/shivam-paradkar-0b4871202/">Linkedin : Shivam Paradkar</a></h5>
-                        <h5><a href="https://github.com/ShivamParadkar">GitHub : ShivamParadkr</a> </h5>
+                        <h5><a href="https://github.com/ShivamParadkar">GitHub : ShivamParadkar</a> </h5>
                         <h5><a href="https://auth.geeksforgeeks.org/user/shivam83paradkar/practice/">GeekForGeeks : Shivam83paradkar</a></h5>
-                        <h5><a href="https://codeforces.com/profile/SParadkar316">CodeForces : SParadkar316</a></h5>
+                        <h5><a href="https://www.codechef.com/users/shivam88394">CodeChef : Shivam Paradkar</a></h5>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12 about_me_right_section">
@@ -222,10 +204,10 @@
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                             <div class="card-columns">
                                 <div class="card border-0  padding-0">
-                                    <img class="card-img-top" src="./Images/portfolio/html/html5.png" />
+                                    <img class="card-img-top" src="./Images/my sites/homesite/GAMING ZOMBIE - Profile 1 - Microsoft​ Edge 8_15_2021 11_10_23 AM 3.png" />
                                 </div>
                                 <div class="card border-0  padding-0">
-                                    <img class="card-img-top" src="./Images/portfolio/html/html3.png" />
+                                    <img class="card-img-top" src="./Images/my sites/payment/Web capture_15-8-2021_113246_.jpeg" />
                                 </div>
                             </div>
                         </div>
@@ -246,7 +228,7 @@
     </div>
 
     <!-- BLOGS SECTION -->
-    <div class="blogs_section" id="blog">
+    <!-- <div class="blogs_section" id="blog">
         <div class="container">
             <div class="row">
                 <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -283,7 +265,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <!-- CONTACT SECTION-->
     <div class="contact_section" id="contact">
@@ -386,7 +368,7 @@
                     <h4 class="heading">My profile links <span style="color: #f87652;">:</span></h4>
                     <ul class="list-group">
                         <li class="list-group-item border-0 bg-transparent">
-                            <h5><a href="https://www.codechef.com/users/shivam88394"><i class=" fa fa-chevron-right"></i><span>CodeChief</span></a></h5>
+                            <h5><a href="https://codeforces.com/profile/SParadkar316"><i class=" fa fa-chevron-right"></i><span>Codeforces</span></a></h5>
                         </li>
                         <li class="list-group-item border-0 bg-transparent">
                             <h5><a href="https://www.hackerearth.com/@shivam83paradkar"><i class=" fa fa-chevron-right"></i><span>HackerEarth</span></a></h5>
