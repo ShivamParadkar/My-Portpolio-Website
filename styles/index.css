@@ -16,6 +16,12 @@
  body {
      background-color: var(--background-color) !important;
  }
+
+ @media screen and (max-width: 365px) {
+     body {
+         font-variant: small-caps;
+     }
+ }
  
  h1,
  h2,
@@ -42,49 +48,43 @@
  }
  /* Navbar */
  
- .nav_section .nav_item {
-     display: flex;
-     flex-direction: row;
-     justify-content: flex-end;
-     position: relative;
- }
- 
- .nav_section .heading {
-     position: absolute;
-     left: 0;
- }
- 
- .nav_section a {
-     color: white;
-     margin: 10px;
-     padding: 5px;
-     border-radius: 5px;
- }
- 
- .nav_section a:hover {
-     color: black;
-     background-color: white;
-     text-decoration: none;
- }
- 
- @media screen and (max-width:700px) {
-     .nav_section .nav_item {
-         display: flex;
-         flex-direction: column;
-     }
-     .nav_section .nav_item a {
-         margin-top: 10px;
-     }
-     .nav_section .nav_item .home {
-         margin-top: 35px;
-     }
-     .nav_section .heading {
-         position: absolute;
-         top: 0;
-         padding-bottom: 15px;
-         margin-bottom: 15px;
-     }
- }
+ .nav_section .navbar-brand {
+    font-size: 22ppx;
+}
+
+.nav_section .navbar-brand span {
+    color: var(--pink-color);
+}
+
+.nav_section .navbar-nav li {
+    margin: 0px 8px;
+}
+
+.nav_section .navbar-nav li a {
+    color: white !important;
+    font-size: 15px;
+}
+
+.nav_section .navbar-nav .nav-link::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    bottom: 7px;
+    transition: 0.5s;
+}
+
+.nav_section .navbar-nav .nav-link:hover::before {
+    content: '';
+    height: 2px;
+    width: 17px;
+    background-color: white;
+    position: absolute;
+    bottom: 7px;
+}
+
+
  /* Hero Section */
  
  .hero_section {
@@ -410,6 +410,13 @@
  .portfolio_section .tab-content .card img {
      border: 2px solid white;
  }
+
+ .imgdescription{
+     padding: 15px;
+     align-self: center;
+     color: black;
+ }
+
  /* Blogs section */
  
  .blogs_section {
@@ -501,6 +508,12 @@
      color: var(--pink-color);
  }
  
+ @media screen and (max-width: 1083px){
+    .map_wrapper{
+        display: none;
+    }
+ }
+
  @media (max-width: 991px) and (min-width: 768px) {
      .contact_section .heading {
          font-size: 42px;
@@ -511,7 +524,7 @@
      .contact_section {
          padding-top: 70px;
      }
- }
+}
  /* FOOTER AREA */
  
  .footer-area {
