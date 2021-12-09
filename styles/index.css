@@ -48,6 +48,14 @@
  }
  /* Navbar */
  
+@media  (max-width: 765px){
+    .navbar .nav_img{
+         width: 20%;
+         height: 20%;
+    }
+    
+}
+
  .nav_section .navbar-brand {
     font-size: 22ppx;
 }
